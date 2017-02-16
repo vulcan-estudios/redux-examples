@@ -5,7 +5,7 @@
 Serie de ejemplos para aprender [Redux](http://redux.js.org).
 
 - [Playground](./play) - Espacio para practicar
-- [Básico](./basic) - Fundamentos
+- [Level 0](./level0) - Fundamentos
 
 ## License
 
