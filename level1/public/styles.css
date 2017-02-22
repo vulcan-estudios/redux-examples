@@ -1,0 +1,42 @@
+.car {
+  position: relative;
+  display: block;
+  width: 1000px;
+  height: 330px;
+  background-image: url(car.png);
+  background-repeat: no-repeat;
+}
+
+.wheel {
+  position: absolute;
+  left: 105px;
+  top: 155px;
+  display: block;
+  width: 165px;
+  height: 165px;
+  background-size: 165px 165px;
+  background-image: url(wheel.png);
+  background-repeat: no-repeat;
+  transition: all 250ms;
+}
+.wheel.wheel--last {
+  left: 738px;
+  top: 153px;
+}
+
+.car.car--run-slow .wheel {
+  animation: wheelRun 3s linear infinite normal;
+}
+
+.car.car--run-fast .wheel {
+  animation: wheelRun 1.5s linear infinite normal;
+}
+
+@keyframes wheelRun {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
