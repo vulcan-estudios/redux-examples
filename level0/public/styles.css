@@ -1,0 +1,10 @@
+strong {
+  font-size: 2rem;
+}
+
+img {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 200px;
+}

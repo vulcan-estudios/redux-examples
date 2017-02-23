@@ -5,7 +5,7 @@ import { ACTIONS } from './consts';
 
 // Sino existe un estado, se define su estado inicial.
 const initial = {
-  counter: 0
+  balance: 0
 };
 
 // Un reducer recibe el state actual y el action que intenta cambiar el estado.
@@ -21,17 +21,17 @@ function reducer (state = initial, action) {
 
     // El type debe ser una constante y debido a que se utilizará por fuera del
     // reducer, se define en otro archivo de constantes y se usa aquí.
-    case ACTIONS.COUNTER_ADD: {
-      const addToCounter = action.payload;
-      const counter = state.counter + addToCounter;
-      const newState = { ...state, counter };  // Nuevo cambio inmutable.
+    case ACTIONS.DEPOSIT: {
+      const toDeposit = action.payload;
+      const balance = state.balance + toDeposit;
+      const newState = { ...state, balance };  // Nuevo cambio inmutable.
       return newState;
     }
 
-    case ACTIONS.COUNTER_SUBTRACT: {
-      const subtractToCounter = action.payload;
-      const counter = state.counter - subtractToCounter;
-      const newState = { ...state, counter };
+    case ACTIONS.WITHDRAW: {
+      const toWithdraw = action.payload;
+      const balance = state.balance - toWithdraw;
+      const newState = { ...state, balance };
       return newState;
     }
 

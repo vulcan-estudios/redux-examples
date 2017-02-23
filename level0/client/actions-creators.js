@@ -1,21 +1,21 @@
 // Los actions definen la forma de comunicar cambios al store desde fuentas externas.
-// Se tiene un módulo que se encargar de crear estos actions mediante funciones,
+// Se tiene un módulo que se encarga de crear estos actions mediante funciones,
 // éste es actions creators.
 
 import { ACTIONS } from './consts';
 
 // Se usan funciones que reciben los datos de cambio y éstas funciones retornan
 // un objeto de action.
-export function counterAdd (counter) {
+export function deposit (value = 0) {
   return {
-    type: ACTIONS.COUNTER_ADD,
-    payload: Number(counter) || 0
+    type: ACTIONS.DEPOSIT,
+    payload: Number(value)
   };
 }
 
-export function counterSubtract (counter) {
+export function withdraw (value = 0) {
   return {
-    type: ACTIONS.COUNTER_SUBTRACT,
-    payload: Number(counter) || 0
+    type: ACTIONS.WITHDRAW,
+    payload: Number(value)
   };
 }
