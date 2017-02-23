@@ -1,5 +1,3 @@
-import 'babel-polyfill';
-
 import $ from 'jquery';
 import store from './store';
 import { deposit, withdraw } from './actions-creators';

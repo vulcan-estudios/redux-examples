@@ -6,7 +6,8 @@ Serie de ejemplos para aprender [Redux](http://redux.js.org).
 
 - [Playground](./play) - Espacio para practicar
 - [Level 0](./level0) - Fundamentos
-- [Level 1](./level1) - Interactivo
+- [Level 1](./level1) - Síncrono e interactivo
+- [Level 2](./level2) - Middlewares y side-effects
 
 ## License
 
