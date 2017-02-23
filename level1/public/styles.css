@@ -1,35 +1,29 @@
 .car {
   position: relative;
   display: block;
-  width: 1000px;
-  height: 330px;
+  width: 700px;
+  height: 250px;
+  background-size: 700px;
   background-image: url(car.png);
   background-repeat: no-repeat;
 }
 
 .wheel {
   position: absolute;
-  left: 105px;
-  top: 155px;
+  left: 74px;
+  top: 110px;
   display: block;
-  width: 165px;
-  height: 165px;
-  background-size: 165px 165px;
+  width: 115px;
+  height: 115px;
+  background-size: 115px;
   background-image: url(wheel.png);
   background-repeat: no-repeat;
   transition: all 250ms;
+  /* animation: wheelRun 2s linear infinite normal; */
 }
 .wheel.wheel--last {
-  left: 738px;
-  top: 153px;
-}
-
-.car.car--run-slow .wheel {
-  animation: wheelRun 3s linear infinite normal;
-}
-
-.car.car--run-fast .wheel {
-  animation: wheelRun 1.5s linear infinite normal;
+  left: 517px;
+  top: 110px;
 }
 
 @keyframes wheelRun {
@@ -38,5 +32,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes wheelRunBackwards {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }
