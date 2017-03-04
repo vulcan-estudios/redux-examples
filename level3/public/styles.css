@@ -1,0 +1,29 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+/* Header */
+
+.header {
+  color: #fff;
+  background-color: #E91E63;
+}
+
+/* User */
+
+.user {
+  color: #999;
+  font-weight: bold;
+}
+.user.user--online {
+  color: #388E3C;
+}
+
+/* Message */
+
+.message b {
+  color: #E91E63;
+}
+i {
+  font-size: 80%;
+}

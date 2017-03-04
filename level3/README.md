@@ -1,4 +1,4 @@
-# Level 3
+# Level 3: Multiple reducers
 
 ![Screenshot](./screenshot.png)
 
