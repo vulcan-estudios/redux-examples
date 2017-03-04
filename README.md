@@ -4,10 +4,25 @@
 
 Serie de ejemplos para aprender [Redux](http://redux.js.org).
 
-- [Playground](./play) - Espacio para practicar
-- [Level 0](./level0) - Fundamentos
-- [Level 1](./level1) - Síncrono e interactivo
-- [Level 2](./level2) - Middlewares y side-effects
+Entra al [espacio para prácticar](./play) para aprender.
+
+## Levels
+
+### Level 0 - [Fundamentos](./level0)
+
+[<img src="./level0/screenshot.png" height="300">](./level0)
+
+### Level 1 - [Fundamentos](./level1)
+
+[<img src="./level1/screenshot.png" height="300">](./level1)
+
+### Level 2 - [Middlewares y side-effects](./level2)
+
+[<img src="./level2/screenshot.png" height="300">](./level2)
+
+### Level 3 - [Multiple reducers](./level3)
+
+[<img src="./level3/screenshot.png" height="300">](./level3)
 
 ## License
 
