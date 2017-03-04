@@ -5,7 +5,7 @@ import { powerUpdate, marchUpdate } from './actions-creators';
 window.$ = window.jQuery = $;
 
 // Actualizar interfaz con los datos del store actualizados
-function render () {
+function updateUI () {
 
   const { power, rpm, march } = store.getState();
 
@@ -46,6 +46,6 @@ $('.march').on('click', function () {
   store.dispatch(marchUpdate(march));
 });
 
-render();
+updateUI();
 
-store.subscribe(render);
+store.subscribe(updateUI);
