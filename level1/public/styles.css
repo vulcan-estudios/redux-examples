@@ -1,3 +1,13 @@
+/* Header */
+
+.header {
+  margin-bottom: 1rem;
+  color: #fff;
+  background-color: #263238;
+}
+
+/* Car */
+
 .car {
   position: relative;
   display: block;

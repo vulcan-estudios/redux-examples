@@ -7,3 +7,11 @@ img {
   margin: 1rem 0;
   width: 100%;
 }
+
+/* Header */
+
+.header {
+  margin-bottom: 1rem;
+  color: #fff;
+  background-color: #4A148C;
+}
