@@ -1,9 +1,0 @@
-export const ACTIONS = {
-  POWER_UPDATE: 'POWER_UPDATE',
-  MARCH_UPDATE: 'MARCH_UPDATE'
-};
-
-export const ENGINE = {
-  RPM_INITIAL: 400,
-  RPM_FACTOR: 750
-};
